@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DnaLibrary Name="RibbonHelloWorld Add-In" RuntimeVersion="v4.0" xmlns="http://schemas.excel-dna.net/addin/2020/07/dnalibrary">
+  <ExternalLibrary Path="RibbonHelloWorld.dll" ExplicitExports="false" LoadFromBytes="true" Pack="true" IncludePdb="false" />
+	<CustomUI>
+		<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui" onLoad="OnLoad">
+			<ribbon>
+				<tabs>
+					<tab id="CustomTab" label="Excel-DNA Demo">
+						<group id="SampleGroup" label="Hello World">
+							<button id="Button1" getLabel="GetButtonLabel" onAction="OnButtonPressed" size="large" imageMso="HappyFace" />
+						</group>
+					</tab>
+				</tabs>
+			</ribbon>
+		</customUI>
+	</CustomUI>
+  
+</DnaLibrary>
